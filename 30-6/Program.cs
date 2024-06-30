@@ -4,45 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _30_6
+namespace _30_6___2_
 {
     internal class Program
     {
-        //static void Main(string[] args)
-        //////{
-        //////}
-
-    public class Task1
-    {
-
-
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int i, n, sum = 0;
-            double avg;
-            Console.Write("\n\n");
-            Console.Write("Read 10 Numbers and calculate sum and average :\n");
-            Console.Write("-------------------------");
-            Console.Write("\n\n");
-
-            Console.Write("Input 10 num :\n ");
-            for (i = 1; i <= 10; i++)
+            Console.WriteLine("Enter Number To Find The Cube: ");
+            int num = Convert.ToInt32(Console.ReadLine());
+            for (int i = 1; i <= num; i++)
             {
-                Console.Write("Numbers -{0}:", i);
-                n = Convert.ToInt32(Console.ReadLine());
-                sum += n;
-
+                Console.WriteLine($"The cube Of {i} IS : {i * i * i}");
             }
-            avg = sum / 10;
-            Console.Write("The sum of the 10 numbers :{0}\n", sum, avg);
+
+            Console.WriteLine("----------------------------------------------------------");
+
         }
 
 
     }
-
-
-
-
-
-}
 }
